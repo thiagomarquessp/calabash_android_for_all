@@ -4,9 +4,9 @@ Na mesma linha de raciocínio de Capybara For All, a idéia é passar do básico
 
 Esse artigo será dividido nas seguintes partes: 
 
-I - Cavala Calava Calaba Calabash (Montando o ambiente de trabalho);
-II - Calabando as coisas (Como buscar seus elementos de maneira simples e não tão simples assim);
-III - De boca no Calabash (Criando Features e Steps e executando);
-IV - s2 Calabash da mamãe s2
+1. Cavala Calava Calaba Calabash (Montando o ambiente de trabalho);
+2. Calabando as coisas (Como buscar seus elementos de maneira simples e não tão simples assim);
+3. De boca no Calabash (Criando Features e Steps e executando);
+4. s2 Calabash da mamãe s2
 
 Let's do it!
