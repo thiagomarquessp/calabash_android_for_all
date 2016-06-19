@@ -41,3 +41,16 @@ Ruby instalado, vamos instalar duas gems: bundler e claro calabash-android:
 gem install bundler
 gem install calabash-android
 ```
+
+Depois de todo esse trampo (instlar Android Studio, SDKs, Java e JDK), agora temos que definir algumas variáveis de ambiente no nosso arquivo e bash_profile (MAC e Linux) ou nas variáveis de ambiente do Windows:
+
+```ruby
+export ANDROID_HOME=/Users/usuario/Library/Android/sdk
+export ANDROID_PLATAFORM_TOOLS=/Users/usuario/Library/Android/sdk/platform-tools
+export ANDROID_TOOLS=/Users/usuario/Library/Android/sdk/tools
+export ANDROID_ADB=/Users/usuario/Library/Android/sdk/platform-tools/adb
+```
+
+Qualquer outra variável que estiver lá NÃO mexa Ok.
+
+Reinicie a máquina e bora pro documento III. =)
