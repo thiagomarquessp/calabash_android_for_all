@@ -5,8 +5,8 @@ Olá pessoal, está sendo um desafio enorme trabalhar nessa iniciativa, mas ao m
 Bom, vamos ao que interessa. Abaixo vou listar a ordem de leitura dos arquivos. E mais uma vez, o fonte vai estar liberado para estudos, fork, etc.
 
 1. Cavala Calava Calaba Calabash (Montando o ambiente de trabalho);
-2. Calabando as coisas (Como buscar seus elementos de maneira simples e não tão simples assim);
-3. De boca no Calabash (Criando Features e Steps e executando);
+2. Calabando as coisas (Criando Features e Steps e executando);
+3. De boca no Calabash (Como buscar seus elementos de maneira simples e não tão simples assim);
 4. s2 Calabash da mamãe s2
 
 Só um pedido, caso façam um fork, POR FAVOR, criem uma branch, abram Pull Request para não ter que subir nada na master e atrapalhar outras pessoas valeu =).
