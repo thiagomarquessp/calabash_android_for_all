@@ -1,6 +1,6 @@
 # Cavala Calava Calaba Calabash (Montando o ambiente de trabalho).
 
-Bem, antes de mais nada estou trabalhando em um MAC, mas isso não é um problema para quem ta trabalhando com Windows ou Linux. O princípio vai sr o mesmo, mas, caso você seja um QA da velha escola, que tal aprender um outro Sistema Operacional???
+Bem, antes de mais nada estou trabalhando em um MAC, mas isso não é um problema para quem ta trabalhando com Windows ou Linux. O princípio vai ser o mesmo, mas, caso você seja um QA da velha escola, que tal aprender um outro Sistema Operacional??? Então pra deixar claro, usando o Windows vc vai ter que usar o dobro o stackoverflow, principalmente no quesito montagem de ambiente. Montar ambiente para testes usando Ruby por exemplo no Mac é um porre danado, mas depois de muito trabalho, você consegue.
 
 Vamos lá. Em meu ambiente de trabalho eu vou precisar da seguinte receita:
 
@@ -52,5 +52,7 @@ export ANDROID_ADB=/Users/usuario/Library/Android/sdk/platform-tools/adb
 ```
 
 Qualquer outra variável que estiver lá NÃO mexa Ok.
+
+Importante saber que definir as variáveis de ambiente é o principal da configuração do ambiente. Sem isso nada funciona. Ok =)
 
 Reinicie a máquina e bora pro documento III. =)
