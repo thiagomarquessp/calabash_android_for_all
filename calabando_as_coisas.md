@@ -43,3 +43,5 @@ Eu sempre gosto de trabalhar com uma pasta specifications para colocar dentro de
 O arquivo "my_first.feature" pode ser removido OK, eu vou ensinar como criar um arquivo legal para trabalhar.
 
 Caso queira dar uma olhada, no próprio repositório a estrutura já está montada.
+
+Bora para o terceiro arquivo da série: https://goo.gl/7EgCjz
