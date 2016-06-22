@@ -9,7 +9,7 @@ Bom, vamos ao que interessa. Abaixo vou listar a ordem de leitura dos arquivos. 
 3. De boca no Calabash (Como buscar seus elementos de maneira simples e não tão simples assim);
 4. s2 Calabash da mamãe s2
 
-Só um pedido, caso façam um fork, POR FAVOR, criem uma branch, abram Pull Request para não ter que subir nada na master e atrapalhar outras pessoas valeu =).
+Só um pedido, caso façam um clone, POR FAVOR, criem uma branch, abram Pull Request para não ter que subir nada na master e atrapalhar outras pessoas valeu =).
 
 
 Let's do it!
