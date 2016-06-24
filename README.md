@@ -6,8 +6,9 @@ Bom, vamos ao que interessa. Abaixo vou listar a ordem de leitura dos arquivos. 
 
 1. Cavala Calava Calaba Calabash (Montando o ambiente de trabalho);
 2. Calabando as coisas (Criando Features e Steps e executando);
-3. De boca no Calabash (Como buscar seus elementos de maneira simples e não tão simples assim);
-4. s2 Calabash da mamãe s2
+3. Lidando com os elementos (Consultando elementos através do console do calabash) 
+4. De boca no Calabash (Como buscar seus elementos de maneira simples e não tão simples assim);
+5. s2 Calabash da mamãe s2
 
 Só um pedido, caso façam um clone, POR FAVOR, criem uma branch, abram Pull Request para não ter que subir nada na master e atrapalhar outras pessoas valeu =).
 

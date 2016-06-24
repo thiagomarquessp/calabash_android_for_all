@@ -1,0 +1,24 @@
+install_app
+install_app
+install_app(busca_cep.apk)
+reinstall_apps
+start_test_server_in_background
+query ("Button")
+query (".Button")
+start_test_server_in_background
+query("android.widget.Button")
+query(visible)
+query(visible)
+query("android.widget.Button") 
+find_coordinate()
+find_coordinate("120", "656", "725", "32", "360", "785"))
+find_coordinate("120", "656", "725", "32", "360", "785")
+find_coordinate("120", "656")
+touch ("btnHistorico")
+touch [btnHistorico]
+touch ["btnHistorico"]
+
+start_test_server_in_background
+query("android.widget.Button") 
+query("android.widget.EditText") 
+exit
