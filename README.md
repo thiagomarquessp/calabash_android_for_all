@@ -4,10 +4,10 @@ Olá pessoal, está sendo um desafio enorme trabalhar nessa iniciativa, mas ao m
 
 Bom, vamos ao que interessa. Abaixo vou listar a ordem de leitura dos arquivos. E mais uma vez, o fonte vai estar liberado para estudos, fork, etc.
 
-1. Cavala Calava Calaba Calabash (Montando o ambiente de trabalho);
-2. Calabando as coisas (Criando Features e Steps e executando);
-3. Lidando com os elementos (Consultando elementos através do console do calabash) 
-4. De boca no Calabash (Como buscar seus elementos de maneira simples e não tão simples assim);
+1. [Cavala Calava Calaba Calabash (Montando o ambiente de trabalho)](https://github.com/thiagomarquessp/calabash_android_for_all/blob/master/montando_Ambiente.md);
+2. [Calabando as coisas (Criando Features e Steps e executando)](https://github.com/thiagomarquessp/calabash_android_for_all/blob/master/calabando_as_coisas.md);
+3. [Lidando com os elementos (Consultando elementos através do console do calabash)](https://github.com/thiagomarquessp/calabash_android_for_all/blob/master/lidando_com_elementos.md); 
+4. [De boca no Calabash (Como buscar seus elementos de maneira simples e não tão simples assim)](https://github.com/thiagomarquessp/calabash_android_for_all/blob/master/de_boca_no_calabash.md);
 
 Só um pedido, caso façam um clone, POR FAVOR, criem uma branch, abram Pull Request para não ter que subir nada na master e atrapalhar outras pessoas valeu =).
 
