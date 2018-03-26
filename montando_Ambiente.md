@@ -4,16 +4,14 @@ Bem, antes de mais nada estou trabalhando em um MAC, mas isso não é um problem
 
 Vamos lá. Em meu ambiente de trabalho eu vou precisar da seguinte receita:
 
-```ruby
 a. Computador: OK;
 b. Java instalado:
-   Mac: https://java.com/en/download/help/mac_install.xml;
-   Win: https://java.com/en/download/;
-   Linux: https://www.java.com/pt_BR/download/help/linux_x64_install.xml;
-c. Java Development Kit (JDK): http://www.oracle.com/technetwork/pt/java/javase/downloads/index.html;
-d. Android Studio: https://developer.android.com/studio/install.html;
+   [Mac:](https://java.com/en/download/help/mac_install.xml);
+   [Win:](https://java.com/en/download/);
+   [Linux:](https://www.java.com/pt_BR/download/help/linux_x64_install.xml);
+c. [Java Development Kit (JDK):](http://www.oracle.com/technetwork/pt/java/javase/downloads/index.html);
+d. [Android Studio:](https://developer.android.com/studio/install.html);
 e. Assim que instalar o Android, instalar os pacotes de SDK Platafform dele;
-```
 
 Esse é o princípio, mas não da pra fazer nada apenas com isso certo?? Vamos precisar instalar o ruby e claro, a gem do calabash-android:
 
@@ -54,4 +52,4 @@ Qualquer outra variável que estiver lá NÃO mexa Ok.
 
 Importante saber que definir as variáveis de ambiente é o principal da configuração do ambiente. Sem isso nada funciona. Ok =)
 
-Reinicie a máquina e bora pro documento III. =)
+Reinicie a máquina e bora vamos para a terceira [parte:](https://github.com/thiagomarquessp/calabash_android_for_all/blob/master/lidando_com_elementos.md)

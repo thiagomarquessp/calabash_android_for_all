@@ -3,16 +3,16 @@
 Após a configuração do ambiente, já podemos trabalhar em paz =), mas antes, no Android Studio, em SDK Manager instale os pacotes que você deseja trabalhar em Platafform Tools e Tools. Vou colocar os que eu estou utilizando ok?:
 
 ```ruby
-SDK Platafforms: Androi 6.0 - Marshmallow;
+SDK Platafforms: Androi 6.0 - Marshmallow ou superior;
 SDK Tools:
   - Android SDK Build Tools;
   - Android Auto API Simulator;
-  - Android SDK Platafform-Tools 24.0.0;
+  - Android SDK Platafform-Tools 24.0.0 ou superior;
 SDK Update Sites: Todos da lista.
 ```
 Coloque o seu celular em modo Desenvolvedor e com Transferência de Fotos (PTP) e Depuração USB habilitada e coloque-o desbloqueado no seu computador.
 
-Vamos no terminal, na pasta do Android Platafform-Tools e execute o seguinte comando: ./adb devices (se estiver no Windows, ./adb.exe devices) para conseguir enxergar o seu device e o resultado será esse:
+Vamos no terminal, na pasta do Android Platafform-Tools e execute o seguinte comando: ./adb devices (se estiver no Windows, ./adb.exe devices) para que possa ser exibido o device (físico no caso) ou caso não tenha um device android disponível, crie um device emulado no próprio Android Studio e coloque-o em execução e faça o comando:
 
 ```ruby
 Biro-MacBook-Pro:platform-tools phoenix$ ./adb devices
@@ -33,7 +33,7 @@ calabash-android resign busca_cep.apk
 Esse comando serve para você assinar a versão e com isso criar o servidor de testes para conseguir rodar, buscar elementos, etc.
 ```
 
-Depois do app estar assinado, vamos entrar em modo console para conseguirmos ver os elementos que esse aplicativo possui, e interagir com eles também. Nessa primeira versão do Calabash For All eu vou colocar o básico para que tu consiga sair do estágio negativo e chegar ao estágio zero. Será feito um segundo Calabash For All com boas práticas, tópicos avançados. Misturar tudo aqui vai confundir geral. Execute o seguinte comando:
+Depois do app estar assinado, vamos entrar em modo console para conseguirmos ver os elementos que esse aplicativo possui, e interagir com eles também e colocar pra rodar.
 
 ```ruby
 calabash-android console busca_cep.apk
@@ -42,7 +42,7 @@ Esse será o resultado:
 
 Done signing the test server. Moved it to test_servers/fa76e313cc2907703902f9defd2f7867_0.7.3.apk
 Starting calabash-android console...
-Loading /Users/phoenix/.rvm/gems/ruby-2.2.0/gems/calabash-android-0.7.3/irbrc
+Loading /Users/phoenix/.rvm/gems/ruby-2.3.3/gems/calabash-android-0.7.3/irbrc
 Running irb...
 irb(main):001:0>
 ```
@@ -64,16 +64,16 @@ irb(main):006:0>
 Esse comando entra no seu aplicativo em modo console (inclusive vc vai ver que ele abriu no seu device).
 ```
 
-Bom ... agora que estamos no console do nosso aplicativo (ufa) vamos para alguns conceitos básicos com relação a gestos no Android e o melhor lugar é no próprio site: https://material.google.com/patterns/gestures.html#gestures-touch-mechanics. Se tu digitar por exemplo: touch, pinch open, rotate, double_tap, tap, etc. no console, vai ver que a lista vai aparecendo (basta auto completar com TAB).
+Bom ... agora que estamos no console do nosso aplicativo (ufa) vamos para alguns conceitos básicos com relação a gestos no Android e o melhor lugar é no [próprio site:](https://material.google.com/patterns/gestures.html#gestures-touch-mechanics). Se tu digitar por exemplo: touch, pinch open, rotate, double_tap, tap, etc. no console, vai ver que a lista vai aparecendo (basta auto completar com TAB).
 
-Alguns comandos que não aparecem nos gestures seria a interação ser humano x teclado celular x app:
+Alguns comandos que não aparecem nos gestures seria a interação ser humano x teclado celular x app por exemplo:
 
 ```ruby
 enter_text - Para inserir textos;
 keyboard_enter_text - Habilita para digitação o teclado do device;
 ```
 
-Bem, direto ao ponto, vamos entender o seguinte: Os elementos do Android possuem uma classe padrão: "android.widget.XXX", onde XXX pode ser o tipo Button, EditText, etc.
+Bem, direto ao ponto, vamos entender o seguinte: Os elementos do Android possuem uma classe padrão: "android.widget.XXX", onde XXX pode ser o tipo Button, EditText, etc, assim como possui ids e outros atributos para aquele elemento específico.
 
 Na prática, vamos lá:
 
@@ -122,10 +122,24 @@ irb(main):010:0> query("android.widget.Button")
 Olha que coisa linda esse resultado. Temos exatamente dois botões no App (BUSCA CEP e HISTÓRICO) na tela inicial. O resultado veio com o índice [0] ou [1] num Json com todo o elemento desmembrado (class, tag, description, id, text, visible, etc.). Bom, agora que sabemos e consultamos os elementos disponíveis nessa tela, vamos interagir e clicar no botão de Buscar CEP da seguinte forma:
 
 ```ruby
+Iteração (touch) pela classe do elemento:
+
 touch ("android.support.v7.widget.AppCompatButton")
+
+Iteração (touch) pelo id do elemento:
+
+touch ("* id:'btnCep'")
 ```
 
 Viram .. ele clicou no botão \o/ .... Até escorreu uma lágrima.
+
+Dica: Se quisermos buscar todos os elementos disponíveis na tela, basta:
+
+```ruby
+irb(main):013:0> query("*")
+
+E vai trazer como mágica todos os elementos.
+```
 
 Agora vamos ver como inserir texto no campo de CEP:
 
@@ -154,12 +168,12 @@ Primeiro temos que encontrar o elemento, que no caso é do tipo EditText:
       }
   ]
 
-Agora temos que dar um touch nesse elemento para habilitar o teclado para conseguir pasar algum valor pra ele:
+Agora temos que dar um touch nesse elemento para habilitar o teclado para conseguir pasar algum valor pra ele, mas vamos buscar esse elemento pelo ID dele (que até então é mais fácil):
 
-irb(main):023:0> touch ("android.support.v7.widget.AppCompatEditText")
+irb(main):023:0> touch ("* id:'edtCep'")
 nil
 
-Habilitou o teclado como você viu no device e agora, é só passar o texto =)
+Habilitou o teclado como você viu no device e agora, é só passar o texto =), nesse caso, vamos passar direto com o comando do keyboard_enter_text
 
 irb(main):048:0> keyboard_enter_text("05433001")
 {
@@ -167,6 +181,10 @@ irb(main):048:0> keyboard_enter_text("05433001")
              "message" => "",
              "success" => true
 }
+
+Ou podemos passar direto com o atributo setText dentro da busca:
+
+irb(main):013:0> query("* id:'edtCep'",setText:"05433001")
 
 Pufffff ... igual mágica passamos um texto só via linha de comando \o/.
 
@@ -205,9 +223,9 @@ irb(main):052:0> query ("android.widget.Button")
     }
 ]
 
-E por fim, vamos dar um touch nele =):
+E por fim, vamos dar um touch nele =) (vamos pelo ID neh):
 
-irb(main):053:0> touch ("android.support.v7.widget.AppCompatButton")
+irb(main):053:0> touch ("* id:'btnChamaBuscaCEP'")
 nil
 ```
 Show de bola =) agora sabemos como interagir com nosso aplicativo através do console do calabash.
