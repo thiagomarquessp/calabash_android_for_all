@@ -52,4 +52,4 @@ Qualquer outra variável que estiver lá NÃO mexa Ok.
 
 Importante saber que definir as variáveis de ambiente é o principal da configuração do ambiente. Sem isso nada funciona. Ok =)
 
-Reinicie a máquina e bora vamos para a terceira [parte:](https://github.com/thiagomarquessp/calabash_android_for_all/blob/master/lidando_com_elementos.md)
+Reinicie a máquina e bora vamos para a segunda [parte:](https://github.com/thiagomarquessp/calabash_android_for_all/blob/master/lidando_com_elementos.md)

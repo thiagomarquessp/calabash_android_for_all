@@ -44,4 +44,4 @@ O arquivo "my_first.feature" pode ser removido OK, eu vou ensinar como criar um 
 
 Caso queira dar uma olhada, no próprio repositório a estrutura já está montada.
 
-Bora para o terceiro arquivo da série: https://goo.gl/7EgCjz
+[Bora para o terceiro arquivo da série.] (https://goo.gl/7EgCjz)
